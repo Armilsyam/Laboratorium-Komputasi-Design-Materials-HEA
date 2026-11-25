@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 from scipy.ndimage import gaussian_filter
 import qrcode
 from io import BytesIO
@@ -308,7 +307,7 @@ elif stasiun == "🔬 Stasiun 4: Microscope, SHAP & Sertifikat":
         ax_c.text(0.4, 1.8, spec_txt, color='white', fontsize=9, bbox=dict(boxstyle="round,pad=0.4", fc="black", ec="gold", alpha=0.75))
 
         qr = qrcode.QRCode(version=1, box_size=6, border=2)
-        qr.add_data("https://designmaterialsmuharmilsyam2026.streamlit.app")
+        qr.add_data("https://armilsyam.github.io/Laboratorium-Komputasi-Design-Materials-HEA/")
         qr.make(fit=True)
         qr_img = np.array(qr.make_image(fill_color="black", back_color="white").convert('RGB'))
         ax_c.imshow(qr_img, extent=[7.5, 9.6, 0.6, 2.7], zorder=10)
