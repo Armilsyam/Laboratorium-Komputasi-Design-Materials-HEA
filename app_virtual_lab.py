@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.ndimage import gaussian_filter
 import qrcode
-from io import BytesIO
 
 # ==============================================================================
 # KONFIGURASI HALAMAN & CUSTOM CSS (UI MODERN)
